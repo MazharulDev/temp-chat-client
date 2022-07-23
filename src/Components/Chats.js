@@ -23,9 +23,9 @@ const Chats = ({ socket, userName, room }) => {
         })
     }, [socket])
     return (
-        <div className='chat-window'>
+        <div className='chat-window container'>
             <div className='chat-header'>
-                <p>Live chat</p>
+                <p className='m-0 block p-2'>Live chat...</p>
             </div>
             <div className='chat-body'>
                 <ScrollToBottom className="message-container">
