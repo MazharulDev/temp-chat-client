@@ -25,11 +25,11 @@ function App() {
                 <p>Temporary chat app for anonymous use</p>
               </div>
               <div className='flex flex-col gap-5'>
-                <input className='p-2 rounded-md' type="text" name="name" placeholder="Mazharul" onChange={(e) => { setUserName(e.target.value) }} />
+                <input className='p-2 rounded-md' type="text" name="name" placeholder="Type your name" onChange={(e) => { setUserName(e.target.value) }} />
 
-                <input className='p-2 rounded-md' type="text" name="name" placeholder="Room ID..." onChange={(e) => { setRoom(e.target.value) }} />
+                <input className='p-2 rounded-md' type="text" name="name" placeholder="Create Code" onChange={(e) => { setRoom(e.target.value) }} />
 
-                <button className='p-2 bg-green-700 rounded-md text-white' onClick={joinRoom}>Join a room</button>
+                <button className='p-2 bg-green-700 rounded-md text-white' onClick={joinRoom}>Start chat</button>
               </div>
             </div>
           )

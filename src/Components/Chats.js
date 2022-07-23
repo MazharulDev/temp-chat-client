@@ -25,7 +25,8 @@ const Chats = ({ socket, userName, room }) => {
     return (
         <div className='chat-window container'>
             <div className='chat-header'>
-                <p className='m-0 block p-2'>Live chat...</p>
+                <div className='active-status'></div>
+                <p className='m-0 block p-2'> Live chat...</p>
             </div>
             <div className='chat-body'>
                 <ScrollToBottom className="message-container">
@@ -47,7 +48,7 @@ const Chats = ({ socket, userName, room }) => {
                 </ScrollToBottom>
             </div>
             <div className='chat-footer'>
-                <input type="text" value={currentMessage} placeholder='hey....' onChange={(e) => { setCurrentMessage(e.target.value) }}
+                <input type="text" value={currentMessage} placeholder='Type...' onChange={(e) => { setCurrentMessage(e.target.value) }}
                     onKeyPress={(e) => { e.key === "Enter" && sendMessage() }}
                 />
                 <button onClick={sendMessage}>&#9658;</button>
