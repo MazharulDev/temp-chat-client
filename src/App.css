@@ -178,4 +178,10 @@
   .chat-window {
       width: 100%;
   }
+  .chat-window .chat-body {
+    height: calc(85vh - (45px + 70px));
+    background: rgb(59, 57, 57);
+  
+    position: relative;
+  }
 }
